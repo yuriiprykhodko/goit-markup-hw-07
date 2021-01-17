@@ -1,0 +1,64 @@
+.main-features .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: left;
+}
+/*section*/
+.main-features {
+  background-color: $primery-white-color;
+}
+/*ul*/
+.features-list {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+/*li*/
+.features-link {
+  width: 270px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*h3*/
+.features-title {
+  width: 270px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-black-color;
+}
+/*p*/
+.features-description {
+  width: 270px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $accent-grey-color;
+}
+.features-list .features-link + .features-link {
+  margin-left: 30px;
+}
+/*div*/
+.features-lable {
+  width: 270px;
+  height: 120px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  background-color: $accent-grayish-color;
+}

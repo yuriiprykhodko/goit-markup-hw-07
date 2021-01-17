@@ -1,0 +1,43 @@
+/*ul*/
+.social-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+/*li*/
+.social-icon .icon-list + .icon-list {
+  margin-left: 10px;
+}
+/*a*/
+.icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: $accent-border-a-color;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}
+/*svg*/
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+
+  fill: currentColor;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  background-color: $title-blue-color;
+  color: $primery-white-color;
+}
