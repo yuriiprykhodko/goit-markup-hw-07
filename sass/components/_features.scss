@@ -1,7 +1,6 @@
 .main-features .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include center-flex(space-between);
+
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: left;
@@ -21,8 +20,7 @@
 .features-link {
   width: 270px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %margin-center;
 }
 /*h3*/
 .features-title {
@@ -55,9 +53,7 @@
   height: 120px;
   margin: 0px;
   padding: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include center-flex(center);
   margin-bottom: 30px;
 
   background-color: $accent-grayish-color;

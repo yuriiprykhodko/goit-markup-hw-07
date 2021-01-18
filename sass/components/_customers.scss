@@ -20,15 +20,13 @@
 /*ul*/
 .customer-list {
   width: 1170px;
+  @extend %margin-center;
 
-  margin-left: auto;
-  margin-right: auto;
   padding: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+
+  @include center-flex(space-around);
 }
 /*li*/
 .customer-lable {
@@ -40,9 +38,7 @@
 }
 /*a*/
 .customer-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include center-flex(center);
 
   width: 170px;
   height: 90px;
@@ -53,9 +49,8 @@
   border-radius: 4px;
   color: $accent-border-a-color;
 
-  transition-property: color, border;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+  @include transition(color);
+  @include transition(border);
 
   &:hover,
   &:focus {
@@ -66,8 +61,7 @@
 /*svg*/
 .customer-icon {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %margin-center;
 
   fill: currentColor;
 }

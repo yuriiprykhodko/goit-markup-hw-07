@@ -7,9 +7,8 @@
   background-color: $accent-backdrop-color;
 
   opacity: 1;
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+
+  @include transition(opacity);
 }
 .backdrop {
   z-index: 2;
@@ -35,9 +34,7 @@
 .close {
   width: 30px;
   height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include center-flex(center);
   position: absolute;
   top: 8px;
   right: 8px;
@@ -77,9 +74,8 @@
   padding-left: 42px;
   border: 1px solid $accent-field-input-color;
   border-radius: 4px;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+
+  @include transition(border-color);
 
   &:focus {
     outline: transparent;
@@ -111,9 +107,8 @@
   width: 18px;
   height: 18px;
   fill: $text-black-color;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+
+  @include transition(fill);
 }
 /*textarea*/
 .form-comment {
@@ -125,9 +120,8 @@
   margin: 0px;
   border: 1px solid $accent-field-input-color;
   border-radius: 4px;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+
+  @include transition(border-color);
 
   &:focus {
     outline: transparent;
@@ -137,8 +131,7 @@
 
 /*div*/
 .checkbox-field {
-  margin-left: auto;
-  margin-right: auto;
+  @extend %margin-center;
   margin-bottom: 30px;
   width: 425px;
 }
@@ -159,9 +152,8 @@
   content: "";
   background-image: url(../images/icon/icon.check.off.svg);
   background-size: contain;
-  transition-property: background-image;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+
+  @include transition(background-image);
 }
 .checkbox:checked + .checkbox-label::before {
   background-image: url(../images/icon/icon.check.on.svg);
@@ -174,14 +166,11 @@
 }
 /*button*/
 .modal-submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include center-flex(center);
 
   min-width: 200px;
   height: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %margin-center;
   padding: 2px;
 
   border: 1px solid transparent;

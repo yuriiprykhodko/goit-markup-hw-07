@@ -371,6 +371,11 @@ summary {
   overflow: hidden;
 }
 
+.main-hero, .checkbox-field, .modal-submit, .features-link, .comand-list, .comand-link, .icon, .customer-list, .customer-icon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .page-header .container {
   display: flex;
   justify-content: space-between;
@@ -408,12 +413,12 @@ summary {
 
 .header-navigation {
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
 }
 
 /*ul*/
-.navigation-list {
+.nav-list {
   display: flex;
   margin: 0;
   padding: 0;
@@ -421,7 +426,7 @@ summary {
 }
 
 /*li*/
-.navigation-list .list-item + .list-item {
+.nav-list .list-item + .list-item {
   margin-left: 50px;
 }
 
@@ -474,7 +479,7 @@ summary {
 }
 
 /*a*/
-.contacts-list {
+.contacts-link {
   display: inline-flex;
   align-items: center;
   color: #757575;
@@ -483,7 +488,7 @@ summary {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-list:hover, .contacts-list:focus {
+.contacts-link:hover, .contacts-link:focus {
   color: #2196f3;
 }
 
@@ -515,8 +520,6 @@ summary {
   padding: 200px 0;
   max-width: 1600px;
   height: 600px;
-  margin-left: auto;
-  margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
   background-color: #212121;
@@ -601,8 +604,8 @@ summary {
   width: 30px;
   height: 30px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -711,8 +714,6 @@ summary {
 
 /*div*/
 .checkbox-field {
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 30px;
   width: 425px;
 }
@@ -754,12 +755,10 @@ summary {
 /*button*/
 .modal-submit {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   min-width: 200px;
   height: 50px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 2px;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -798,8 +797,6 @@ summary {
 .features-link {
   width: 270px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*h3*/
@@ -835,8 +832,8 @@ summary {
   margin: 0px;
   padding: 0px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   background-color: #f5f4fa;
 }
@@ -920,14 +917,12 @@ summary {
 /*ul*/
 .comand-list {
   width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
   background: #f5f4fa;
 }
 
@@ -935,8 +930,6 @@ summary {
 .comand-link {
   width: 270px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
@@ -989,13 +982,16 @@ summary {
 /*a*/
 .icon-link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   color: #afb1b8;
-  transition-property: color, background-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1003,8 +999,6 @@ summary {
 /*svg*/
 .icon {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0px;
   fill: currentColor;
 }
@@ -1039,14 +1033,12 @@ summary {
 /*ul*/
 .customer-list {
   width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
 }
 
 /*li*/
@@ -1062,8 +1054,8 @@ summary {
 /*a*/
 .customer-link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
   margin: 0px;
@@ -1072,7 +1064,10 @@ summary {
   box-sizing: border-box;
   border-radius: 4px;
   color: #afb1b8;
-  transition-property: color, border;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1085,8 +1080,6 @@ summary {
 /*svg*/
 .customer-icon {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   fill: currentColor;
 }
 
@@ -1215,8 +1208,8 @@ summary {
 /*button*/
 .footer-button {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 2px;
@@ -1262,9 +1255,9 @@ summary {
 /*ul*/
 .portfolio-buttons {
   display: flex;
-  border-radius: 4px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  border-radius: 4px;
   margin-bottom: 50px;
   margin-top: 0px;
   padding-left: 0px;
@@ -1279,14 +1272,17 @@ summary {
 /*кнопка*/
 .button-link {
   border: 0px;
-  padding-right: 22px;
-  padding-left: 22px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 22px;
   border-radius: 4px;
   background-color: #f5f4fa;
   color: #212121;
-  transition-property: background-color, color, box-shadow;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1392,10 +1388,7 @@ summary {
   width: 370px;
   background-color: #ffffff;
   text-align: left;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-top: 20px;
+  padding: 20px 24px;
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #eeeeee;

@@ -8,10 +8,8 @@
 /*butons*/
 /*ul*/
 .portfolio-buttons {
-  display: flex;
+  @include center-flex(center);
   border-radius: 4px;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 50px;
   margin-top: 0px;
   padding-left: 0px;
@@ -25,17 +23,14 @@
 /*кнопка*/
 .button-link {
   border: 0px;
-  padding-right: 22px;
-  padding-left: 22px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 22px;
   border-radius: 4px;
   background-color: $accent-grayish-color;
   color: $text-black-color;
 
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+  @include transition(background-color);
+  @include transition(color);
+  @include transition(box-shadow);
 
   &:hover,
   &:focus {
@@ -89,9 +84,7 @@
 .filter {
   display: block;
 
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+  @include transition(box-shadow);
 
   &:hover,
   &:focus {
@@ -134,10 +127,7 @@
   width: 370px;
   background-color: $primery-white-color;
   text-align: left;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-top: 20px;
+  padding: 20px 24px;
 
   border-right-width: 1px;
   border-right-style: solid;

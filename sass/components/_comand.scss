@@ -22,14 +22,14 @@
 /*ul*/
 .comand-list {
   width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
+
+  @extend %margin-center;
+
   padding: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+
+  @include center-flex(space-around);
 
   background: $accent-grayish-color;
 }
@@ -38,8 +38,9 @@
 .comand-link {
   width: 270px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+  @extend %margin-center;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 

@@ -1,7 +1,5 @@
 .page-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include center-flex(space-between);
 }
 .page-header {
   background-color: $primery-white-color;
@@ -29,13 +27,11 @@
   color: $text-black-color;
 }
 .header-navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  @include center-flex(space-around);
 }
 /*ul*/
 
-.navigation-list {
+.nav-list {
   display: flex;
   margin: 0;
   padding: 0;
@@ -43,7 +39,7 @@
   color: $text-black-color;
 }
 /*li*/
-.navigation-list .list-item + .list-item {
+.nav-list .list-item + .list-item {
   margin-left: 50px;
 }
 /*a*/
@@ -52,9 +48,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+  @include transition(color);
 
   &:hover,
   &:focus {

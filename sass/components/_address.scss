@@ -21,9 +21,7 @@
 
   color: $accent-grey-color;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+  @include transition(color);
 
   &:hover,
   &:focus {
