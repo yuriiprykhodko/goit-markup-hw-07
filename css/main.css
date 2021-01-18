@@ -29,6 +29,14 @@ img {
   height: auto;
 }
 
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -350,14 +358,6 @@ summary {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/roboto-v20-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto") format("svg");
   /* Legacy iOS */
-}
-
-.container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .visually-hidden {
@@ -1251,62 +1251,6 @@ summary {
   background: #ffffff;
 }
 
-/*butons*/
-/*ul*/
-.portfolio-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  margin-bottom: 50px;
-  margin-top: 0px;
-  padding-left: 0px;
-  background: #ffffff;
-}
-
-/*li*/
-.button-filter {
-  display: block;
-}
-
-/*кнопка*/
-.button-link {
-  border: 0px;
-  padding: 6px 22px;
-  border-radius: 4px;
-  background-color: #f5f4fa;
-  color: #212121;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-link:hover, .button-link:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-/*название кнопки*/
-.button-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: currentColor;
-}
-
-.portfolio-buttons .button-filter + .button-filter {
-  margin-left: 8px;
-}
-
 /*Слайди*/
 /*ul*/
 .portfolio-slids {
@@ -1419,5 +1363,61 @@ summary {
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+/*butons*/
+/*ul*/
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  padding-left: 0px;
+  background: #ffffff;
+}
+
+/*li*/
+.button-filter {
+  display: block;
+}
+
+/*кнопка*/
+.button-link {
+  border: 0px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  color: #212121;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-link:hover, .button-link:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/*название кнопки*/
+.button-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: currentColor;
+}
+
+.portfolio-buttons .button-filter + .button-filter {
+  margin-left: 8px;
 }
 /*# sourceMappingURL=main.css.map */

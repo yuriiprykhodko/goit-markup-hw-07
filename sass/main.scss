@@ -2,8 +2,7 @@
 @import "./base/base";
 @import "./base/normalize";
 @import "./base/fonts";
-@import "./base/container";
-@import "./utils/hidden";
+@import "./base/hidden";
 @import "./utils/mixin";
 @import "./utils/placeholders";
 @import "./components/header";
@@ -19,4 +18,5 @@
 @import "./components/footer";
 @import "./components/address";
 @import "./components/form";
-@import "./components/portfolio";
+@import "./components/cards";
+@import "./components/buttons.filters";

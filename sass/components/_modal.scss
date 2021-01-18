@@ -27,7 +27,7 @@
   min-width: 528px;
   padding: 40px;
 
-  background-color: $primery-white-color;
+  background-color: $white-color;
 }
 
 /*button*/
@@ -41,7 +41,7 @@
   border-radius: 50%;
   border: 1px solid $accent-close-border-color;
   box-sizing: border-box;
-  background-color: $primery-white-color;
+  background-color: $white-color;
 }
 /*svg*/
 .close-icon:hover {
@@ -177,7 +177,7 @@
   border-radius: 4px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: $primery-white-color;
+  color: $white-color;
   background-color: $title-blue-color;
 
   font-weight: 700;
